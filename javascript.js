@@ -13,6 +13,8 @@ const playerScoreElement = document.getElementById('playerScore');
 const computerScoreElement = document.getElementById('computerScore');
 const roundResultElement = document.getElementById('roundResult');
 const gameResultElement = document.getElementById('gameResult');
+const playerChoiceElement = document.getElementById('playerChoice');
+const computerChoiceElement = document.getElementById('computerChoice');
 
 // Initialize scores
 let playerScore = 0;
@@ -54,6 +56,8 @@ function playRound(playerChoice) {
     // Update the score display
     playerScoreElement.textContent = 'Player: ' + playerScore;
     computerScoreElement.textContent = 'Computer: ' + computerScore;
+    playerChoiceElement.textContent = 'Player choice: ' + playerChoice;
+    computerChoiceElement.textContent = 'Computer choice: ' + computerChoice;
 
     // Display the round result
     roundResultElement.textContent = roundResult;
